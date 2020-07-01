@@ -1,6 +1,6 @@
 # 課題1 レポート
 
-aa83988848 薗田光太郎
+bb35319014 大嶌優仁
 
 ## 課題
 
@@ -42,15 +42,15 @@ $$u^2=\dfrac{1}{N-1}\sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)^2=\dfrac{N}{N-1}s^2
 |母集団分散|$28.98$|
 
 ## ソースコードの説明
-6.　平均を求めるための関数を定義
-7.　分散を求めるための関数を定義
-14~17. それぞれの因数を定義
+6.　平均を求めるための関数を宣言
+7.　分散を求めるための関数を宣言
+14~17. それぞれの引数を定義
 30. 34~37を一行ずつ読み取り読み取れなくなったら終了する
 34. Nを+1する
 35. varにvar_onlineの計算結果を代入
 36. aveにave_onlineの計算結果を代入
 37. square_aveの説明
-45.　不変分散を求める式
+45.　不偏分散を求める式
 46. 標本平均aveを出力
 47. 標本分散varを出力
 48. 母集団平均aveを出力
@@ -68,6 +68,12 @@ sample variance：
 population mean (estimated)：
 population variance (estimated)：
 ```
+input the filename of sample:c:\Users\bb35319014\Desktop\2020psp2\sample\heights_male.csv
+the filename of sample: c:\Users\bb35319014\Desktop\2020psp2\sample\heights_male.csv
+ave=173.888750
+var=25.361711
+est ave=173.888750
+est var=28.984813
 
 ## 修正履歴
 
