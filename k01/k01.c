@@ -43,10 +43,10 @@ int main(void)
     }
 
     varM=N*var/(N-1);
-    printf("ave=%if\n",ave);
-    printf("var=%if\n",var);
-    printf("est ave=%if\n",ave);
-    printf("est var=%if\n",varM);
+    printf("ave=%f\n",ave);
+    printf("var=%f\n",var);
+    printf("est ave=%f\n",ave);
+    printf("est var=%f\n",varM);
 
     return 0;
 
