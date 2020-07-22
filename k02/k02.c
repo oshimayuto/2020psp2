@@ -17,7 +17,7 @@ int main(void)
     double s_A=5.43;
     double mu_B=169.7;
     double s_B=5.5;
-    double z1,z2,y1,y2;
+    double z1,z2,y1,y2=0;
     double max_val,min_val;
 
     printf("input the filename of sample:");
