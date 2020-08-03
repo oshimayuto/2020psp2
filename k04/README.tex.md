@@ -46,6 +46,7 @@ Which ID's data do you want? : 45313124
 No data
 ```
 
+```
 input the filename of sample height:c:\Users\bb35319014\Desktop\2020psp2\sample\heights.csv
 input the filename of sample ID:c:\Users\bb35319014\Desktop\2020psp2\sample\IDs.csv
 which ID's data do you want? : 45313002
@@ -53,6 +54,9 @@ which ID's data do you want? : 45313002
 ID : 45313002
 Gender ; Female
 Heights : 183.870
+```
 
 ## 修正履歴
 
+[comment #20200804 sonoda]
+- 45313002はfemaleではなくmaleです．heightはあっていますけど．
