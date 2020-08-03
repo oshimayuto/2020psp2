@@ -13,12 +13,11 @@ int main(void)
     char buf[256];
     FILE* fp;
     double L1=1,L2=1;
-    double mu_A=170.8;
-    double s_A=5.43;
-    double mu_B=169.7;
+    const double mu_A=170.8;
+    const double s_A=5.43;
+    const double mu_B=169.7;
     double s_B=5.5;
-    double z1,z2,y1,y2=0;
-    double max_val,min_val;
+    double z1=0,z2=0,y1=0,y2=0;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -39,20 +38,17 @@ int main(void)
         z2=(x-mu_B)/(s_B);
         y2=p_stdnorm(z2);
         L1=L1*y1;
-        L2=L2*y1;
+        L2=L2*y2;
 
     }
-
-    max_val=L1;
-    min_val=L2;
 
     if(fclose(fp) == EOF){
         fputs("file close error\n",stderr);
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("L_A: %f\n",L1);
+    printf("L_B: %f\n",L2);
 
     return 0;
 

@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define _USE_MATH_DEFINES
-#include <math.h>　
 
 typedef struct heights
 {
@@ -56,7 +54,11 @@ int main(void)
         sscanf(buf_height, "%d, %lf", &tbl_gender, &man[n].heights);
         if(tbl_gender == 1)
         {
-            strcpy(man[n].gender, "Female");
+            strcpy(man[n].gender, "Male");
+        }
+        else
+        {
+            strcpy(man[n].gender,"Female");
         }
         n++;
     }
@@ -68,7 +70,7 @@ int main(void)
         {
             printf("ID : %d\n", man[i].id);
             printf("Gender ; %s\n", man[i].gender);
-            printf("Heights : %.3lf\n", man[i].heights);
+            printf("Heights : %.2lf\n", man[i].heights);
             break;
         }
         else

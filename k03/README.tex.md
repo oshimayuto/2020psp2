@@ -1,6 +1,6 @@
 # 課題3 レポート
 
-aa83988848 薗田光太郎
+bb35319014  大嶌　優仁
 
 ## 課題
 
@@ -66,6 +66,10 @@ int main(int argc, char* argv[])
 
 
 ## ソースコードの説明
+4.M_PIを識別するために必要
+19~23.引数宣言
+25~28.実行時にargcに入る数が異なっているときエラーを出す
+53~56,58~61.それぞれの関数をつくときはreturnの後の式を用いる
 
 ## 入出力結果
 
@@ -84,9 +88,33 @@ Num of dummy data: 5
 166.74
 ```
 
+PS C:\Users\bb35319014\Desktop\2020psp2\k03> gcc -o k03 k03.c -W -Wall -DCONST_SEED
+PS C:\Users\bb35319014\Desktop\2020psp2\k03> ./k03 170.8 5.43 5
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+162.20
+171.29
+175.88
+168.59
+166.74
+
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
 
-
+PS C:\Users\bb35319014\Desktop\2020psp2\k03> gcc -o k03 k03.c -W -Wall
+PS C:\Users\bb35319014\Desktop\2020psp2\k03> ./k03 170.8 5.43 5        
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+171.53
+170.94
+165.04
+171.07
+164.82
 
 ## 修正履歴
 

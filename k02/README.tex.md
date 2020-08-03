@@ -1,6 +1,6 @@
 # 課題2 レポート
 
-aa83988848 薗田光太郎
+bb35319014  大嶌　優仁
 
 ## 課題
 
@@ -24,6 +24,16 @@ $$
 と計算できる．$p$は仮定した確率密度関数で，$\theta$はその母数．$p$が正規分布なら，$\theta$は，平均$\mu$と分散$\sigma^2$である．
 
 ## ソースコードの説明
+4.M_PIを識別するために必要
+11~20.引数宣言
+35.変数xを宣言
+36.z1の値を計算
+37.y1にz1の出現確率を代入
+38.z2の値を計算
+39.y2にz2の出現確率を代入
+40,41.尤度を計算
+58~61.p_stdnorm関数を使うときはreturnの後にある式を使う
+
 
 ## 入出力結果
 
@@ -31,6 +41,13 @@ $$
 Likelihood for A：
 Likelihood for B：
 ```
+
+PS C:\Users\bb35319014\Desktop\2020psp2\k02> gcc -o k02 k02.c -W -Wall -DCONST_SEED
+PS C:\Users\bb35319014\Desktop\2020psp2\k02> ./k02
+input the filename of sample:c:\Users\bb35319014\Desktop\2020psp2\sample\heights_male.csv
+the filename of sample: c:\Users\bb35319014\Desktop\2020psp2\sample\heights_male.csv
+L_A: 0.000006
+L_B: 0.000002
 
 ## 修正履歴
 

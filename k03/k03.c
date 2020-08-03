@@ -4,6 +4,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 #ifdef CONST_SEED
+#define RAND_SEED 2020
 #else
 #include <time.h>
 #define RAND_SEED ((unsigned) time(NULL))
