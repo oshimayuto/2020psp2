@@ -73,21 +73,7 @@ int main(int argc, char* argv[])
 
 ## 入出力結果
 
-以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
-
 ```
-============================================
-template mean: 170.8
-template standard deviation: 5.43
-Num of dummy data: 5
-============================================
-162.20
-171.29
-175.88
-168.59
-166.74
-```
-
 PS C:\Users\bb35319014\Desktop\2020psp2\k03> gcc -o k03 k03.c -W -Wall -DCONST_SEED
 PS C:\Users\bb35319014\Desktop\2020psp2\k03> ./k03 170.8 5.43 5
 ============================================
@@ -100,9 +86,11 @@ Num of dummy data: 5
 175.88
 168.59
 166.74
+```
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
 
+```
 PS C:\Users\bb35319014\Desktop\2020psp2\k03> gcc -o k03 k03.c -W -Wall
 PS C:\Users\bb35319014\Desktop\2020psp2\k03> ./k03 170.8 5.43 5        
 ============================================
@@ -115,6 +103,9 @@ Num of dummy data: 5
 165.04
 171.07
 164.82
+```
 
 ## 修正履歴
 
+[comment #20200804 sonoda]
+- OKです．課題3完了
