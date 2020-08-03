@@ -51,8 +51,8 @@ input the filename of sample ID:c:\Users\bb35319014\Desktop\2020psp2\sample\IDs.
 which ID's data do you want? : 45313002
 
 ID : 45313002
-Gender ; Female
-Heights : 183.870
+Gender ; Male
+Heights : 183.87
 
 ## 修正履歴
 
