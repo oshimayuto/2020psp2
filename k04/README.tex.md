@@ -60,3 +60,6 @@ Heights : 183.87
 
 [comment #20200804 sonoda]
 - 45313002はfemaleではなくmaleです．heightはあっていますけど．
+
+[comment #20200804-2 sonoda]
+- OKです．課題4完了
